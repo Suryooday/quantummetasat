@@ -1,0 +1,302 @@
+[
+  {
+    "task_id": "val_task_0000",
+    "file_path": "data/processed/val/val_task_0000.npz",
+    "num_samples": 200,
+    "metadata": {
+      "elevation_deg": 32.52065393090957,
+      "slant_range_m": 1017570.5638048234,
+      "amplitude_A": 0.5896396980633216,
+      "fspl_db": 158.6196738402034,
+      "doppler_freq_hz": 32215.801801529455,
+      "environment": "infrequent_light",
+      "snr_db_target": 6.214970553327479,
+      "snr_db_measured": 6.049808390430247
+    }
+  },
+  {
+    "task_id": "val_task_0001",
+    "file_path": "data/processed/val/val_task_0001.npz",
+    "num_samples": 200,
+    "metadata": {
+      "elevation_deg": 50.30933257699239,
+      "slant_range_m": 757882.9349009842,
+      "amplitude_A": 0.7916789946964418,
+      "fspl_db": 156.0604257002358,
+      "doppler_freq_hz": -33454.62702016686,
+      "environment": "average",
+      "snr_db_target": 19.418479851648186,
+      "snr_db_measured": 19.825751776612325
+    }
+  },
+  {
+    "task_id": "val_task_0002",
+    "file_path": "data/processed/val/val_task_0002.npz",
+    "num_samples": 200,
+    "metadata": {
+      "elevation_deg": 40.57905061188855,
+      "slant_range_m": 873752.4339850289,
+      "amplitude_A": 0.6866933660642376,
+      "fspl_db": 157.29615110628455,
+      "doppler_freq_hz": -22593.123326284796,
+      "environment": "frequent_heavy",
+      "snr_db_target": 14.695465219978736,
+      "snr_db_measured": 14.980081933040383
+    }
+  },
+  {
+    "task_id": "val_task_0003",
+    "file_path": "data/processed/val/val_task_0003.npz",
+    "num_samples": 200,
+    "metadata": {
+      "elevation_deg": 40.651165840484765,
+      "slant_range_m": 872693.5057699159,
+      "amplitude_A": 0.6875266013016361,
+      "fspl_db": 157.2856180178804,
+      "doppler_freq_hz": -25584.573918435603,
+      "environment": "infrequent_light",
+      "snr_db_target": 15.335649144573418,
+      "snr_db_measured": 15.464618778683928
+    }
+  },
+  {
+    "task_id": "val_task_0004",
+    "file_path": "data/processed/val/val_task_0004.npz",
+    "num_samples": 200,
+    "metadata": {
+      "elevation_deg": 61.80163233410755,
+      "slant_range_m": 672583.2516181944,
+      "amplitude_A": 0.8920828738396868,
+      "fspl_db": 155.02330410510223,
+      "doppler_freq_hz": 5297.130151749792,
+      "environment": "average",
+      "snr_db_target": 19.777968575055183,
+      "snr_db_measured": 19.79982507091657
+    }
+  },
+  {
+    "task_id": "val_task_0005",
+    "file_path": "data/processed/val/val_task_0005.npz",
+    "num_samples": 200,
+    "metadata": {
+      "elevation_deg": 43.08449683509361,
+      "slant_range_m": 838924.081074235,
+      "amplitude_A": 0.7152017846855763,
+      "fspl_db": 156.9428363526343,
+      "doppler_freq_hz": -17150.253457387927,
+      "environment": "frequent_heavy",
+      "snr_db_target": 11.449763755191531,
+      "snr_db_measured": 11.47309407111715
+    }
+  },
+  {
+    "task_id": "val_task_0006",
+    "file_path": "data/processed/val/val_task_0006.npz",
+    "num_samples": 200,
+    "metadata": {
+      "elevation_deg": 29.34635647878852,
+      "slant_range_m": 1091341.9637933136,
+      "amplitude_A": 0.5497818464842175,
+      "fspl_db": 159.22760023159165,
+      "doppler_freq_hz": -26994.42484725596,
+      "environment": "infrequent_light",
+      "snr_db_target": 16.93245713965577,
+      "snr_db_measured": 16.970417225454046
+    }
+  },
+  {
+    "task_id": "val_task_0007",
+    "file_path": "data/processed/val/val_task_0007.npz",
+    "num_samples": 200,
+    "metadata": {
+      "elevation_deg": 54.86699982874246,
+      "slant_range_m": 718660.360038368,
+      "amplitude_A": 0.8348867328204481,
+      "fspl_db": 155.5988569480799,
+      "doppler_freq_hz": 21307.027520507996,
+      "environment": "average",
+      "snr_db_target": 18.358964454743354,
+      "snr_db_measured": 18.726513170160622
+    }
+  },
+  {
+    "task_id": "val_task_0008",
+    "file_path": "data/processed/val/val_task_0008.npz",
+    "num_samples": 200,
+    "metadata": {
+      "elevation_deg": 68.23105087053234,
+      "slant_range_m": 641702.4214926511,
+      "amplitude_A": 0.9350128344604841,
+      "fspl_db": 154.61505669763983,
+      "doppler_freq_hz": 8515.904132317808,
+      "environment": "frequent_heavy",
+      "snr_db_target": 12.470636783458733,
+      "snr_db_measured": 12.657626136453766
+    }
+  },
+  {
+    "task_id": "val_task_0009",
+    "file_path": "data/processed/val/val_task_0009.npz",
+    "num_samples": 200,
+    "metadata": {
+      "elevation_deg": 54.736548547643444,
+      "slant_range_m": 719675.3009731481,
+      "amplitude_A": 0.8337093119475927,
+      "fspl_db": 155.61111509706527,
+      "doppler_freq_hz": -27094.155297655765,
+      "environment": "infrequent_light",
+      "snr_db_target": 8.217672835652039,
+      "snr_db_measured": 8.485602770141227
+    }
+  },
+  {
+    "task_id": "val_task_0010",
+    "file_path": "data/processed/val/val_task_0010.npz",
+    "num_samples": 200,
+    "metadata": {
+      "elevation_deg": 39.31385859089537,
+      "slant_range_m": 892910.6730989357,
+      "amplitude_A": 0.6719597134141537,
+      "fspl_db": 157.48454341885463,
+      "doppler_freq_hz": -34988.447722000725,
+      "environment": "average",
+      "snr_db_target": 16.501213720856303,
+      "snr_db_measured": 16.446767286197282
+    }
+  },
+  {
+    "task_id": "val_task_0011",
+    "file_path": "data/processed/val/val_task_0011.npz",
+    "num_samples": 200,
+    "metadata": {
+      "elevation_deg": 33.21405502414949,
+      "slant_range_m": 1002923.0820072386,
+      "amplitude_A": 0.598251262498782,
+      "fspl_db": 158.49373566714138,
+      "doppler_freq_hz": 28219.432848576947,
+      "environment": "frequent_heavy",
+      "snr_db_target": 15.441304949171293,
+      "snr_db_measured": 15.476267214294905
+    }
+  },
+  {
+    "task_id": "val_task_0012",
+    "file_path": "data/processed/val/val_task_0012.npz",
+    "num_samples": 200,
+    "metadata": {
+      "elevation_deg": 61.420667090938984,
+      "slant_range_m": 674744.5722041344,
+      "amplitude_A": 0.8892253820435009,
+      "fspl_db": 155.05117112878116,
+      "doppler_freq_hz": -25568.203133746974,
+      "environment": "infrequent_light",
+      "snr_db_target": 19.229390159506316,
+      "snr_db_measured": 19.08705852108421
+    }
+  },
+  {
+    "task_id": "val_task_0013",
+    "file_path": "data/processed/val/val_task_0013.npz",
+    "num_samples": 200,
+    "metadata": {
+      "elevation_deg": 65.11952134322081,
+      "slant_range_m": 655377.4403259642,
+      "amplitude_A": 0.9155029805444307,
+      "fspl_db": 154.79821289194084,
+      "doppler_freq_hz": 11085.415726586576,
+      "environment": "average",
+      "snr_db_target": 16.99644306835349,
+      "snr_db_measured": 16.98047354202879
+    }
+  },
+  {
+    "task_id": "val_task_0014",
+    "file_path": "data/processed/val/val_task_0014.npz",
+    "num_samples": 200,
+    "metadata": {
+      "elevation_deg": 35.20479913935591,
+      "slant_range_m": 963484.0069651855,
+      "amplitude_A": 0.6227399683466468,
+      "fspl_db": 158.1452733376304,
+      "doppler_freq_hz": -331.80722276742733,
+      "environment": "frequent_heavy",
+      "snr_db_target": 7.060682085238856,
+      "snr_db_measured": 7.308959542052728
+    }
+  },
+  {
+    "task_id": "val_task_0015",
+    "file_path": "data/processed/val/val_task_0015.npz",
+    "num_samples": 200,
+    "metadata": {
+      "elevation_deg": 60.2433460524755,
+      "slant_range_m": 681678.7322620144,
+      "amplitude_A": 0.8801800197125413,
+      "fspl_db": 155.1399780277379,
+      "doppler_freq_hz": 10008.036283335283,
+      "environment": "infrequent_light",
+      "snr_db_target": 11.551129691385473,
+      "snr_db_measured": 11.615919590100017
+    }
+  },
+  {
+    "task_id": "val_task_0016",
+    "file_path": "data/processed/val/val_task_0016.npz",
+    "num_samples": 200,
+    "metadata": {
+      "elevation_deg": 63.20754158816141,
+      "slant_range_m": 664944.9519005055,
+      "amplitude_A": 0.9023303331879071,
+      "fspl_db": 154.92409700136318,
+      "doppler_freq_hz": 29765.46967336875,
+      "environment": "average",
+      "snr_db_target": 16.86125224486812,
+      "snr_db_measured": 16.478557183387863
+    }
+  },
+  {
+    "task_id": "val_task_0017",
+    "file_path": "data/processed/val/val_task_0017.npz",
+    "num_samples": 200,
+    "metadata": {
+      "elevation_deg": 26.016888656734512,
+      "slant_range_m": 1182367.1997763715,
+      "amplitude_A": 0.5074565668884267,
+      "fspl_db": 159.9234306029691,
+      "doppler_freq_hz": 3413.511623613229,
+      "environment": "frequent_heavy",
+      "snr_db_target": 12.520730121083744,
+      "snr_db_measured": 12.983230762425588
+    }
+  },
+  {
+    "task_id": "val_task_0018",
+    "file_path": "data/processed/val/val_task_0018.npz",
+    "num_samples": 200,
+    "metadata": {
+      "elevation_deg": 43.507261675622644,
+      "slant_range_m": 833426.7816707054,
+      "amplitude_A": 0.7199192696894465,
+      "fspl_db": 156.8857321779367,
+      "doppler_freq_hz": -2156.5936904758564,
+      "environment": "infrequent_light",
+      "snr_db_target": 18.031545316285516,
+      "snr_db_measured": 18.28108793757091
+    }
+  },
+  {
+    "task_id": "val_task_0019",
+    "file_path": "data/processed/val/val_task_0019.npz",
+    "num_samples": 200,
+    "metadata": {
+      "elevation_deg": 54.18113519829027,
+      "slant_range_m": 724063.8829563102,
+      "amplitude_A": 0.8286561643569837,
+      "fspl_db": 155.663920834561,
+      "doppler_freq_hz": 20853.226225652084,
+      "environment": "average",
+      "snr_db_target": 13.828751394966524,
+      "snr_db_measured": 13.395099042966137
+    }
+  }
+]

@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:      #F7F5F0;
+  --surface: #FFFFFF;
+  --cream:   #EDE9DF;
+  --border:  #E0DAD0;
+  --text:    #1C1C1E;
+  --sub:     #555550;
+  --dim:     #9B9690;
+  --blue:    #1B4FD8;
+  --blue-bg: #EEF2FF;
+  --green:   #16A34A;
+  --green-bg:#F0FDF4;
+  --amber:   #D97706;
+  --amber-bg:#FFFBEB;
+  --red:     #DC2626;
+  --red-bg:  #FEF2F2;
+  --purple:  #7C3AED;
+  --purple-bg:#F5F3FF;
+}
+
+html, body {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--cream); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+/* --- cards --- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.card-sm {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+/* --- step indicator --- */
+.step-circle {
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 700; flex-shrink: 0;
+  transition: all .35s ease;
+}
+
+.step-active .step-circle { background: var(--blue); color: #fff; box-shadow: 0 0 0 4px var(--blue-bg); }
+.step-done .step-circle   { background: var(--green); color: #fff; }
+.step-idle .step-circle   { background: var(--cream); color: var(--dim); }
+
+.step-connector {
+  width: 2px; min-height: 32px; margin: 0 auto;
+  transition: background .5s ease;
+}
+
+/* --- bit badge --- */
+.bit { display: inline-block; width: 20px; height: 24px; line-height: 24px; text-align: center;
+       border-radius: 4px; font-family: 'JetBrains Mono', 'Courier New', monospace;
+       font-size: 11px; font-weight: 600; margin: 1px; transition: all .3s ease; }
+.bit-0 { background: var(--cream); color: var(--sub); }
+.bit-1 { background: var(--blue-bg); color: var(--blue); }
+.bit-highlight { background: var(--blue); color: #fff; transform: scale(1.1); }
+
+/* --- signal bar --- */
+.sig-bar {
+  display: inline-block; width: 6px; border-radius: 2px;
+  background: var(--blue); transition: height .4s ease;
+  vertical-align: bottom;
+}
+
+/* --- buttons --- */
+.btn-primary {
+  background: var(--blue); color: #fff;
+  border: none; border-radius: 10px;
+  padding: 10px 24px; font-size: 14px; font-weight: 600;
+  cursor: pointer; transition: all .2s; font-family: inherit;
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.btn-primary:hover { background: #1543c0; transform: translateY(-1px); }
+.btn-primary:active { transform: translateY(0); }
+.btn-primary:disabled { background: var(--border); color: var(--dim); cursor: not-allowed; transform: none; }
+
+.btn-ghost {
+  background: transparent; color: var(--sub);
+  border: 1px solid var(--border); border-radius: 10px;
+  padding: 9px 20px; font-size: 14px; font-weight: 500;
+  cursor: pointer; transition: all .2s; font-family: inherit;
+}
+.btn-ghost:hover { border-color: var(--blue); color: var(--blue); background: var(--blue-bg); }
+
+/* --- pill badge --- */
+.pill {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 3px 10px; border-radius: 20px;
+  font-size: 11px; font-weight: 600; letter-spacing: .04em;
+}
+.pill-blue   { background: var(--blue-bg);   color: var(--blue); }
+.pill-green  { background: var(--green-bg);  color: var(--green); }
+.pill-amber  { background: var(--amber-bg);  color: var(--amber); }
+.pill-purple { background: var(--purple-bg); color: var(--purple); }
+
+/* --- mono code --- */
+.mono {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 12px;
+}
+
+/* --- progress --- */
+.progress { height: 5px; background: var(--cream); border-radius: 3px; overflow: hidden; }
+.progress-fill { height: 100%; border-radius: 3px; background: var(--blue); transition: width 1.2s cubic-bezier(.4,0,.2,1); }
+
+/* --- animations --- */
+@keyframes fadeUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes pulse  { 0%,100%{opacity:1} 50%{opacity:.35} }
+@keyframes travel { 0%{left:0%;opacity:0} 15%{opacity:1} 85%{opacity:1} 100%{left:100%;opacity:0} }
+@keyframes ripple { 0%{transform:scale(0);opacity:.6} 100%{transform:scale(3);opacity:0} }
+@keyframes slideIn { from{opacity:0;transform:translateX(-8px)} to{opacity:1;transform:translateX(0)} }
+@keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+
+.anim-fadeup  { animation: fadeUp .45s ease both; }
+.anim-fadein  { animation: fadeIn .4s ease both; }
+.anim-pulse   { animation: pulse 2s ease-in-out infinite; }
+.anim-blink   { animation: blink 1s step-end infinite; }

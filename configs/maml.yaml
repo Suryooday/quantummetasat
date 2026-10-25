@@ -1,0 +1,13 @@
+# Model-Agnostic Meta-Learning (MAML) Configuration
+maml:
+  inner_lr: 0.01                 # Inner-loop learning rate alpha
+  outer_lr: 0.001                # Meta-optimizer learning rate beta
+  inner_steps_train: 5           # Number of gradient steps during meta-training
+  inner_steps_eval: [0, 1, 3, 5, 10]  # Adaptation steps tested at evaluation
+  first_order: false             # Full second-order MAML (MAML) vs FOMAML
+  meta_batch_size: 4             # Number of tasks sampled per meta-update
+  meta_epochs: 60                # Number of outer meta-training epochs
+  tasks_per_epoch: 40            # Meta-batches processed per epoch
+  support_size: 10               # Support set size (K=10 pilot symbols default)
+  query_size: 30                 # Query set size for meta-loss computation
+  loss_fn: "mse"

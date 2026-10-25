@@ -1,0 +1,8 @@
+| Architecture Variant                     | Qubits   |   Total Params | Quantum Params   |   NMSE |   NMSE (dB) |       BER | Scientific Rationale                                                        |
+|:-----------------------------------------|:---------|---------------:|:-----------------|-------:|------------:|----------:|:----------------------------------------------------------------------------|
+| Classical Supervised MLP (No Q, No Meta) | —        |         21,506 | —                | 0.1274 |       -8.95 | 0.0035    | Pure classical baseline without quantum circuit or meta-learning adaptation |
+| Classical MAML (No Quantum)              | —        |         21,506 | —                | 0.1551 |       -8.09 | 0.009     | Demonstrates meta-adaptation benefits without quantum parameter efficiency  |
+| Fixed VQC (No Meta-Learning)             | 4        |            798 | 24               | 0.1339 |       -8.73 | 0.0034167 | Demonstrates quantum parameter efficiency without episodic task adaptation  |
+| Q-MAML without Entanglement (No CNOT)    | 4        |            798 | 24               | 0.4968 |       -3.04 | 0.11933   | Evaluates the critical role of quantum entanglement in feature correlation  |
+| QuantumMeta-Sat (4 Qubits)               | 4        |            798 | 24               | 0.4629 |       -3.34 | 0.11233   | Proposed hybrid quantum meta-learning architecture (4 qubits)               |
+| QuantumMeta-Sat (8 Qubits)               | 8        |          1,058 | 48               | 0.9618 |       -0.17 | 0.41833   | Scaled hybrid quantum meta-learning architecture (8 qubits)                 |

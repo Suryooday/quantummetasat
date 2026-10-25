@@ -1,0 +1,7 @@
+Model,Params,Qubits,Quantum Params,NMSE,NMSE (dB),BER,Inference Latency (ms),Adaptation Steps
+Least Squares (LS),—,—,—,0.2573,-5.89,1.6667e-04,0.0003,—
+Windowed LS Reference,—,—,—,0.9243,-0.34,3.7267e-01,0.0048,—
+Classical Supervised MLP,"21,506",—,—,0.1274,-8.95,3.5000e-03,0.0114,—
+Classical Supervised CNN,"43,682",—,—,0.1241,-9.06,2.1667e-03,0.0427,—
+Classical MAML (MLP),"21,506",—,—,0.1551,-8.09,9.0000e-03,0.0114,5–10
+Proposed Fixed Hybrid VQC (4 Qubits),798,4,24,0.1339,-8.73,3.4167e-03,2.1824,—

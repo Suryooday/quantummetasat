@@ -1,0 +1,17 @@
+{
+  "model_name": "Fixed VQC",
+  "nmse": 0.12449316252022982,
+  "nmse_db": -9.04854500466064,
+  "ber": 0.0018333333333333335,
+  "total_parameters": 798,
+  "quantum_parameters": 24,
+  "classical_parameters": 774,
+  "quantum_ratio": 0.03007518796992481,
+  "num_qubits": 4,
+  "circuit_depth": 12,
+  "n_layers": 3,
+  "entanglement": "circular",
+  "batch_latency_ms": 2.182361659943126,
+  "per_sample_latency_ms": 2.182361659943126,
+  "training_time_s": 17.000985145568848
+}

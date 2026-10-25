@@ -1,0 +1,4 @@
+| Exploratory Variant        |   Qubits |   Total Params |   Quantum Params |   NMSE |   NMSE (dB) |     BER |   Latency (ms) | Experimental Outcome & Diagnosis                                      |
+|:---------------------------|---------:|---------------:|-----------------:|-------:|------------:|--------:|---------------:|:----------------------------------------------------------------------|
+| Q-MAML (4 Qubits)          |        4 |            798 |               24 | 0.4629 |       -3.34 | 0.11233 |         2.1824 | Failed (Meta-gradient instability through quantum circuit; BER 11.2%) |
+| QuantumMeta-Sat (8 Qubits) |        8 |            954 |               48 | 0.9618 |       -0.17 | 0.41833 |         3.421  | Failed (Barren plateaus & dimensional collapse; BER 41.8% ~ random)   |

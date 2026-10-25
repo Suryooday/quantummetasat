@@ -1,0 +1,28 @@
+# Hybrid Quantum-Classical VQC Configuration
+quantum:
+  num_qubits: 4                  # Primary 4-qubit circuit (scalable to 8)
+  n_layers: 3                    # Number of variational layers with data re-uploading
+  classical_encoder:
+    input_dim: 36
+    hidden_dim: 16
+    output_dim: 4                # Compressed to 4 features matching qubit count
+    activation: "tanh"           # Bounds features for angle encoding in [-pi, pi]
+  entanglement: "circular"       # "circular", "linear", or "all-to-all" (CNOT / CZ)
+  rotation_gates: ["Ry", "Rz"]   # Ry and Rz parameterized single-qubit rotations
+  measurement: "pauliz"          # Pauli-Z expectation values on all qubits
+  data_reuploading: true         # Re-upload features at each variational layer
+  classical_decoder:
+    input_dim: 4                 # 4 Pauli-Z expectation measurements
+    hidden_dim: 16
+    output_dim: 2                # [Re(h), Im(h)]
+  device_type: "default.qubit"   # PennyLane simulator backend
+
+q_maml:
+  inner_lr: 0.02
+  outer_lr: 0.002
+  inner_steps_train: 5
+  inner_steps_eval: [0, 1, 3, 5, 10]
+  meta_batch_size: 4
+  meta_epochs: 40
+  support_size: 10
+  query_size: 30

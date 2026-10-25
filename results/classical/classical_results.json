@@ -1,0 +1,46 @@
+{
+  "LS": {
+    "nmse": 0.12165684917320808,
+    "nmse_db": -9.148634356489392,
+    "ber": 0.0,
+    "per_sample_latency_ms": 0.00026284016591186327,
+    "total_params": 0,
+    "trainable_params": 0
+  },
+  "Windowed_Reference": {
+    "nmse": 0.9082819938659668,
+    "nmse_db": -0.4177929534829467,
+    "ber": 0.37225,
+    "per_sample_latency_ms": 0.0047577640022306395,
+    "total_params": 0,
+    "trainable_params": 0
+  },
+  "MLP": {
+    "nmse": 0.12741940648605427,
+    "nmse_db": -8.947644221737065,
+    "ber": 0.0035,
+    "total_params": 21506,
+    "trainable_params": 21506,
+    "classical_params": 21506,
+    "quantum_params": 0,
+    "qubit_count": 0,
+    "circuit_depth": 0,
+    "batch_latency_ms": 0.01136583014158532,
+    "per_sample_latency_ms": 0.01136583014158532,
+    "training_time_s": 1.6018340587615967
+  },
+  "CNN": {
+    "nmse": 0.12630641081680855,
+    "nmse_db": -8.985746058048736,
+    "ber": 0.0027500000000000007,
+    "total_params": 43682,
+    "trainable_params": 43682,
+    "classical_params": 43682,
+    "quantum_params": 0,
+    "qubit_count": 0,
+    "circuit_depth": 0,
+    "batch_latency_ms": 0.04269458004273474,
+    "per_sample_latency_ms": 0.04269458004273474,
+    "training_time_s": 16.68238091468811
+  }
+}

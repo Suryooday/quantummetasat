@@ -1,0 +1,39 @@
+# Dataset Configuration for Task Generation and Preprocessing
+dataset:
+  train:
+    num_tasks: 80
+    samples_per_task: 200
+    elevation_deg_range: [20.0, 75.0]
+    snr_db_range: [5.0, 20.0]
+    environments: ["infrequent_light", "average", "frequent_heavy"]
+    doppler_freq_range_hz: [-40000.0, 40000.0]
+    seed: 1001
+
+  val:
+    num_tasks: 20
+    samples_per_task: 200
+    elevation_deg_range: [25.0, 70.0]
+    snr_db_range: [5.0, 20.0]
+    environments: ["infrequent_light", "average", "frequent_heavy"]
+    doppler_freq_range_hz: [-35000.0, 35000.0]
+    seed: 2001
+
+  test:
+    num_tasks: 30
+    samples_per_task: 200
+    # Unseen elevations and specific SNR evaluation points
+    elevation_deg_list: [20.0, 30.0, 45.0, 60.0, 75.0, 90.0]
+    snr_db_list: [5.0, 10.0, 15.0, 20.0]
+    environments: ["infrequent_light", "average", "frequent_heavy"]
+    doppler_freq_range_hz: [-48000.0, 48000.0]
+    seed: 3001
+
+windowing:
+  window_size: 9
+  input_dim: 36
+  target_dim: 2
+
+few_shot:
+  support_sizes: [1, 5, 10, 20]
+  default_support_size: 10
+  query_size: 50
