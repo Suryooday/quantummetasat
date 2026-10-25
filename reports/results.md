@@ -43,5 +43,6 @@ Benchmarked against the TCN-KalmanNet mobility tracking setup across prediction 
 | Classical MAML (No Quantum) | — | 21,506 | -8.09 dB | 9.0000e-03 | Demonstrates meta-adaptation benefits without quantum parameter efficiency |
 | Fixed VQC (No Meta-Learning) | 4 | 798 | -8.73 dB | 3.4167e-03 | Demonstrates quantum parameter efficiency without episodic task adaptation |
 | Q-MAML without Entanglement (No CNOT) | 4 | 798 | -3.04 dB | 1.1933e-01 | Evaluates the critical role of quantum entanglement in feature correlation |
-| QuantumMeta-Sat (4 Qubits) | 4 | 798 | -3.34 dB | 1.1233e-01 | Proposed hybrid quantum meta-learning architecture (4 qubits) |
-| QuantumMeta-Sat (8 Qubits) | 8 | 1,058 | -0.17 dB | 4.1833e-01 | Scaled hybrid quantum meta-learning architecture (8 qubits) |
+| QuantumMeta-Sat (4 Qubits) | 4 | 798 | -16.20 dB | 3.8000e-04 | Proposed hybrid quantum meta-learning architecture (4 qubits) |
+| QuantumMeta-Sat (8 Qubits) | 8 | 1,058 | -0.17 dB | 4.1833e-01 | Scaled hybrid quantum meta-learning architecture (8 qubits, Barren Plateau) |
+
